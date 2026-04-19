@@ -133,3 +133,14 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  width: 80px; /* adjust size as needed */
+  height: auto;
+}
