@@ -146,8 +146,3 @@ nav a:hover {
   transform: translateY(-50%);
   width: 60px;
 }
-
-.header-text h1,
-.header-text h2 {
-  margin: 0;
-}
