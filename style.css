@@ -134,13 +134,20 @@ nav a:hover {
   }
 }
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
 }
 
 .logo {
-  width: 120px;
-  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+}
+
+.header-text h1,
+.header-text h2 {
+  margin: 0;
 }
