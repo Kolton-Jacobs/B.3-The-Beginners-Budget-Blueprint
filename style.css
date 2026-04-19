@@ -113,8 +113,22 @@ section {
 .bad {
   color: red;
 }
+nav {
+  background-color: #1f3c88;
+  padding: 12px;
+  text-align: center;
+}
 
-@media (max-width: 768px) {
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}@media (max-width: 768px) {
   .calculator-grid {
     grid-template-columns: 1fr;
   }
