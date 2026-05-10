@@ -14,7 +14,7 @@ body {
 
 .site-header {
   position: relative;
-  background-color: ##008CF0;
+  background-color: #008CF0;
   color: white;
   text-align: center;
   padding: 40px 20px 30px 20px;
@@ -38,7 +38,7 @@ body {
 }
 
 .navbar {
-  background-color: ##224F70;
+  background-color: #224F70;
   padding: 12px;
   text-align: center;
 }
