@@ -7,14 +7,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f7fb;
+  background-color: #C4E1FF;
   color: #222;
   line-height: 1.6;
 }
 
 .site-header {
   position: relative;
-  background-color: #2181BD;
+  background-color: #0466BF;
   color: white;
   text-align: center;
   padding: 40px 20px 30px 20px;
