@@ -35,6 +35,7 @@ body {
 
 .header-text p {
   margin-top: 10px;
+  font-size: 1rem;
 }
 
 .navbar {
@@ -48,11 +49,13 @@ body {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: opacity 0.3s ease;
 }
 
 .nav-tab:hover,
 .nav-tab.active {
   text-decoration: underline;
+  opacity: 0.9;
 }
 
 main {
@@ -66,13 +69,13 @@ section {
   background-color: white;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .card h2,
 section h2 {
-  color: #1f3c88;
+  color: #224F70;
   margin-top: 0;
 }
 
@@ -87,7 +90,7 @@ section h2 {
 
 .budget-calculator h2 {
   margin-bottom: 10px;
-  color: #1f3c88;
+  color: #224F70;
 }
 
 .budget-calculator p {
@@ -129,7 +132,7 @@ section h2 {
   padding: 12px 18px;
   border: none;
   border-radius: 8px;
-  background-color: #1f3c88;
+  background-color: #224F70;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -137,7 +140,7 @@ section h2 {
 }
 
 .button-group button:hover {
-  background-color: #162d66;
+  background-color: #17384f;
 }
 
 .results-box {
@@ -145,7 +148,7 @@ section h2 {
   padding: 18px;
   background-color: #f4f7fb;
   border-radius: 10px;
-  border-left: 5px solid #1f3c88;
+  border-left: 5px solid #224F70;
 }
 
 #budgetMessage {
@@ -165,9 +168,27 @@ section h2 {
   color: red;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #224F70;
+  color: white;
+}
+
 footer {
   text-align: center;
-  background-color: #1f3c88;
+  background-color: #224F70;
   color: white;
   padding: 15px;
   margin-top: 40px;
@@ -192,5 +213,9 @@ footer {
 
   .header-text h1 {
     font-size: 1.6rem;
+  }
+
+  main {
+    padding: 0.8rem;
   }
 }
