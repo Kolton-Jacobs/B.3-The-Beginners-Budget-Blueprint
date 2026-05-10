@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,133 +9,158 @@
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="basics.html">Budget Basics</a>
+  <header class="site-header">
+    <img src="logo.png" alt="Budget Blueprint Logo" class="logo">
+
+    <div class="header-text">
+      <h1>Budget Calculator</h1>
+      <p>Calculate your income, expenses, and remaining balance.</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="index.html" class="nav-tab">Home</a>
+        <a href="basics.html" class="nav-tab">Budget Basics</a>
+        <a href="calculator.html" class="nav-tab active">Calculator</a>
+        <a href="savings.html" class="nav-tab">Savings Tips</a>
+        <a href="sample-budget.html" class="nav-tab">Sample Budget</a>
+      </div>
+    </div>
   </nav>
 
   <main>
-    <h1>Monthly Budget Calculator</h1>
-    <p>Use this tool to calculate your income, expenses, and remaining balance.</p>
-
     <section class="budget-calculator">
-  <h2>Monthly Budget Calculator</h2>
-  <p>Enter your monthly income and expenses to see whether you are staying within budget.</p>
+      <h2>Monthly Budget Calculator</h2>
+      <p>Enter your monthly income and expenses to see whether you are staying within budget.</p>
 
-  <div class="calculator-grid">
-    <div class="input-group">
-      <label for="income">Monthly Income</label>
-      <input type="number" id="income" placeholder="Enter income" min="0" step="0.01">
-    </div>
+      <div class="calculator-grid">
+        <div class="input-group">
+          <label for="income">Monthly Income</label>
+          <input type="number" id="income" placeholder="Enter income" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="rent">Rent / Housing</label>
-      <input type="number" id="rent" placeholder="Enter rent" min="0" step="0.01">
-    </div>
+        <div class="input-group">
+          <label for="rent">Rent / Housing</label>
+          <input type="number" id="rent" placeholder="Enter rent" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="groceries">Groceries / Food</label>
-      <input type="number" id="groceries" placeholder="Enter food cost" min="0" step="0.01">
-    </div>
+        <div class="input-group">
+          <label for="groceries">Groceries / Food</label>
+          <input type="number" id="groceries" placeholder="Enter food cost" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="transportation">Transportation</label>
-      <input type="number" id="transportation" placeholder="Enter transportation cost" min="0" step="0.01">
-    </div>
+        <div class="input-group">
+          <label for="transportation">Transportation</label>
+          <input type="number" id="transportation" placeholder="Enter transportation cost" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="utilities">Utilities</label>
-      <input type="number" id="utilities" placeholder="Enter utilities cost" min="0" step="0.01">
-    </div>
+        <div class="input-group">
+          <label for="utilities">Utilities</label>
+          <input type="number" id="utilities" placeholder="Enter utilities cost" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="entertainment">Entertainment</label>
-      <input type="number" id="entertainment" placeholder="Enter entertainment cost" min="0" step="0.01">
-    </div>
+        <div class="input-group">
+          <label for="entertainment">Entertainment</label>
+          <input type="number" id="entertainment" placeholder="Enter entertainment cost" min="0" step="0.01">
+        </div>
 
-    <div class="input-group">
-      <label for="other">Other Expenses</label>
-      <input type="number" id="other" placeholder="Enter other expenses" min="0" step="0.01">
-    </div>
-  </div>
+        <div class="input-group">
+          <label for="other">Other Expenses</label>
+          <input type="number" id="other" placeholder="Enter other expenses" min="0" step="0.01">
+        </div>
+      </div>
 
-  <div class="button-group">
-    <button id="calculateBtn">Calculate Budget</button>
-    <button id="resetBtn" type="button">Reset</button>
-  </div>
+      <div class="button-group">
+        <button id="calculateBtn">Calculate Budget</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
 
-  <div class="results-box">
-    <h3>Budget Summary</h3>
-    <p><strong>Total Income:</strong> $<span id="totalIncome">0.00</span></p>
-    <p><strong>Total Expenses:</strong> $<span id="totalExpenses">0.00</span></p>
-    <p><strong>Remaining Balance:</strong> $<span id="remainingBalance">0.00</span></p>
-    <p id="budgetMessage">Enter your numbers and click calculate.</p>
-  </div>
-</section>
-    
+      <div class="results-box">
+        <h3>Budget Summary</h3>
+        <p><strong>Total Income:</strong> $<span id="totalIncome">0.00</span></p>
+        <p><strong>Total Expenses:</strong> $<span id="totalExpenses">0.00</span></p>
+        <p><strong>Remaining Balance:</strong> $<span id="remainingBalance">0.00</span></p>
+        <p id="budgetMessage">Enter your numbers and click calculate.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How to Use Your Results</h2>
+      <p>
+        If your remaining balance is positive, you may have extra money available for savings,
+        debt payments, or future goals. If your balance is negative, review your spending
+        categories and look for areas where you can cut back.
+      </p>
+    </section>
   </main>
 
+  <footer>
+    <p>Created by Kolton Jacobs | The Beginner’s Budget Blueprint</p>
+  </footer>
+
   <script>
-  const calculateBtn = document.getElementById("calculateBtn");
-  const resetBtn = document.getElementById("resetBtn");
+    const calculateBtn = document.getElementById("calculateBtn");
+    const resetBtn = document.getElementById("resetBtn");
 
-  calculateBtn.addEventListener("click", function () {
-    const income = parseFloat(document.getElementById("income").value) || 0;
-    const rent = parseFloat(document.getElementById("rent").value) || 0;
-    const groceries = parseFloat(document.getElementById("groceries").value) || 0;
-    const transportation = parseFloat(document.getElementById("transportation").value) || 0;
-    const utilities = parseFloat(document.getElementById("utilities").value) || 0;
-    const entertainment = parseFloat(document.getElementById("entertainment").value) || 0;
-    const other = parseFloat(document.getElementById("other").value) || 0;
+    calculateBtn.addEventListener("click", function () {
+      const income = parseFloat(document.getElementById("income").value) || 0;
+      const rent = parseFloat(document.getElementById("rent").value) || 0;
+      const groceries = parseFloat(document.getElementById("groceries").value) || 0;
+      const transportation = parseFloat(document.getElementById("transportation").value) || 0;
+      const utilities = parseFloat(document.getElementById("utilities").value) || 0;
+      const entertainment = parseFloat(document.getElementById("entertainment").value) || 0;
+      const other = parseFloat(document.getElementById("other").value) || 0;
 
-    const inputs = [income, rent, groceries, transportation, utilities, entertainment, other];
-    const budgetMessage = document.getElementById("budgetMessage");
+      const inputs = [income, rent, groceries, transportation, utilities, entertainment, other];
+      const budgetMessage = document.getElementById("budgetMessage");
 
-    for (let i = 0; i < inputs.length; i++) {
-      if (inputs[i] < 0) {
-        budgetMessage.textContent = "Please enter only positive numbers.";
-        budgetMessage.className = "bad";
-        return;
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i] < 0) {
+          budgetMessage.textContent = "Please enter only positive numbers.";
+          budgetMessage.className = "bad";
+          return;
+        }
       }
-    }
 
-    const totalExpenses = rent + groceries + transportation + utilities + entertainment + other;
-    const remainingBalance = income - totalExpenses;
+      const totalExpenses = rent + groceries + transportation + utilities + entertainment + other;
+      const remainingBalance = income - totalExpenses;
 
-    document.getElementById("totalIncome").textContent = income.toFixed(2);
-    document.getElementById("totalExpenses").textContent = totalExpenses.toFixed(2);
-    document.getElementById("remainingBalance").textContent = remainingBalance.toFixed(2);
+      document.getElementById("totalIncome").textContent = income.toFixed(2);
+      document.getElementById("totalExpenses").textContent = totalExpenses.toFixed(2);
+      document.getElementById("remainingBalance").textContent = remainingBalance.toFixed(2);
 
-    if (remainingBalance > 0) {
-      budgetMessage.textContent = "Great job! You are within your budget.";
-      budgetMessage.className = "good";
-    } else if (remainingBalance === 0) {
-      budgetMessage.textContent = "You are exactly at your budget limit.";
-      budgetMessage.className = "warning";
-    } else {
-      budgetMessage.textContent = "You are over budget. Try reducing some expenses.";
-      budgetMessage.className = "bad";
-    }
-  });
+      if (remainingBalance > 0) {
+        budgetMessage.textContent = "Great job! You are within your budget.";
+        budgetMessage.className = "good";
+      } else if (remainingBalance === 0) {
+        budgetMessage.textContent = "You are exactly at your budget limit.";
+        budgetMessage.className = "warning";
+      } else {
+        budgetMessage.textContent = "You are over budget. Try reducing some expenses.";
+        budgetMessage.className = "bad";
+      }
+    });
 
-  resetBtn.addEventListener("click", function () {
-    document.getElementById("income").value = "";
-    document.getElementById("rent").value = "";
-    document.getElementById("groceries").value = "";
-    document.getElementById("transportation").value = "";
-    document.getElementById("utilities").value = "";
-    document.getElementById("entertainment").value = "";
-    document.getElementById("other").value = "";
+    resetBtn.addEventListener("click", function () {
+      document.getElementById("income").value = "";
+      document.getElementById("rent").value = "";
+      document.getElementById("groceries").value = "";
+      document.getElementById("transportation").value = "";
+      document.getElementById("utilities").value = "";
+      document.getElementById("entertainment").value = "";
+      document.getElementById("other").value = "";
 
-    document.getElementById("totalIncome").textContent = "0.00";
-    document.getElementById("totalExpenses").textContent = "0.00";
-    document.getElementById("remainingBalance").textContent = "0.00";
+      document.getElementById("totalIncome").textContent = "0.00";
+      document.getElementById("totalExpenses").textContent = "0.00";
+      document.getElementById("remainingBalance").textContent = "0.00";
 
-    const budgetMessage = document.getElementById("budgetMessage");
-    budgetMessage.textContent = "Enter your numbers and click calculate.";
-    budgetMessage.className = "";
-  });
-</script>
-  
+      const budgetMessage = document.getElementById("budgetMessage");
+      budgetMessage.textContent = "Enter your numbers and click calculate.";
+      budgetMessage.className = "";
+    });
+  </script>
+
 </body>
 </html>
