@@ -1,16 +1,58 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f7fb;
   color: #222;
+  line-height: 1.6;
 }
 
-header {
+.site-header {
+  position: relative;
   background-color: #1f4e79;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 40px 20px 30px 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header-text p {
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: #1f3c88;
+  padding: 12px;
+  text-align: center;
+}
+
+.nav-tab {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-tab:hover,
+.nav-tab.active {
+  text-decoration: underline;
 }
 
 main {
@@ -19,16 +61,26 @@ main {
   padding: 1rem;
 }
 
+.card,
 section {
   background-color: white;
   padding: 1.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
+.card h2,
+section h2 {
+  color: #1f3c88;
+  margin-top: 0;
+}
+
 .budget-calculator {
   max-width: 800px;
   margin: 40px auto;
   padding: 25px;
-  background-color: #f4f7fb;
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -40,7 +92,6 @@ section {
 
 .budget-calculator p {
   margin-bottom: 20px;
-  line-height: 1.5;
 }
 
 .calculator-grid {
@@ -92,7 +143,7 @@ section {
 .results-box {
   margin-top: 25px;
   padding: 18px;
-  background-color: white;
+  background-color: #f4f7fb;
   border-radius: 10px;
   border-left: 5px solid #1f3c88;
 }
@@ -113,41 +164,33 @@ section {
 .bad {
   color: red;
 }
-nav {
-  background-color: #1f3c88;
-  padding: 12px;
+
+footer {
   text-align: center;
-}
-
-nav a {
+  background-color: #1f3c88;
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 15px;
+  margin-top: 40px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}@media (max-width: 768px) {
+@media (max-width: 768px) {
+  .logo {
+    position: static;
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 100px;
+  }
+
   .calculator-grid {
     grid-template-columns: 1fr;
   }
-}
-.site-header {
-  position: relative;
-  text-align: center;
-  padding: 40px 20px 20px 20px;
-}
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 140px;
-  height: auto;
-}
+  .nav-tab {
+    display: block;
+    margin: 8px 0;
+  }
 
-.header-text h1,
-.header-text p {
-  margin: 1;
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
 }
