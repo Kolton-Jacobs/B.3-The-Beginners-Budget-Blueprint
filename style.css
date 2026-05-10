@@ -14,7 +14,15 @@ body {
 
 .site-header {
   position: relative;
-  background-color: #0466BF;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)),
+    url("header-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
   text-align: center;
   padding: 40px 20px 30px 20px;
