@@ -2,7 +2,7 @@
 
 ## 1. Decisions
 
-One of the biggest decisions I made during this project was choosing to build a budgeting website focused on college students and young adults. What made me choose this topic is the fat that financial literacy is something that affects almost everyone, especially people who are just starting to manage money on their own. I wanted to create something that felt useful and realistic instead of just making a random website with no real purpose behind it, and something that I would use myself.
+One of the biggest decisions I made during this project was choosing to build a budgeting website that was strictly on college students and young adults. What made me choose this topic is the fact that financial literacy is something that affects everyone, especially people who are just starting to manage money on their own. I wanted to create something that felt useful and realistic instead of just making a random website with no real purpose behind it, and something that I would use myself.
 
 Another important decision was keeping the project simple and beginner-friendly. Early on, I considered adding more advanced features, but I realized that making the website clean, organized, and easy to understand was more important than making it overly complicated. I focused on creating clear navigation, readable content, and tools that users could actually understand and use. I also decided to include a budget calculator because it added interactivity to the site and made the project feel more practical.
 
@@ -18,7 +18,7 @@ I am also happy with how the educational content turned out. The Budget Basics, 
 
 ## 3. What I Would Do Differently
 
-If I started this project over, I would spend more time planning the layout and file structure before I began coding. At the beginning, I focused mostly on getting pages working, but later I had to go back and reorganize CSS styles, navigation bars, and headers to make everything consistent. Having a stronger plan from the start would have saved time later in the process.
+If I started this project over, I would spend more time planning the layout and file structure before I began coding. At the beginning, I focused more on gettingn the pages working, but later I had to go back and reorganize CSS styles, navigation bars, and headers to make everything consistent. Having a stronger plan from the start would have saved time later in the process.
 
 I would also probably learn more JavaScript before starting the project. While I was able to build the calculator successfully, I realized that interactive features require more planning and troubleshooting than basic HTML and CSS. If I had more experience with JavaScript, I think I could have added more advanced features like expense tracking, savings goals, or charts.
 
